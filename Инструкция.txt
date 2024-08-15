@@ -1,0 +1,14 @@
+Для решение я выбрал модель Yolov8
+
+car_detector.py - Здесь я прогоняю каждую картику из data и детектирую машину и сохраняю в data/marked_images
+
+image_detect.py - Здесь пару функций которые я потом имортирую
+
+fastapi_web_service.py Здесь Api для принятие и отправки ответа в виде base64
+для запуска: fastapi dev .\fastapi_web_service.py
+
+test.py тут я проверял кодирование и декодирование из base64
+
+streamlit_app.py небольшой сервис, при загрузки картинки выдает уже сегментированную картинку
+и кнопка для отправки запроса к fast_api
+streamlit run .\streamlit_app.py    
